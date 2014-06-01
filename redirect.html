@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Redirect to correct page</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+<body>
+	<form action="#">
+		<input type="text" name="promocode" id="promocode">
+		<p><button type="submit">Send code</button></p>
+		<span></span>
+	</form>
+	
+	<script>
+		$('form').on('submit', function(e) {
+			var code = $(this).find('#promocode').val();
+			console.log( code );
+			if ((code) == 'SK10') {
+				console.log('SK10code');
+				window.location.href = './skype65.html';
+			} else if ((code) == 'SK20') {
+				console.log('SK20code');
+				window.location.href = './skype75.html';
+			} else if ((code) == 'SK30') {
+				console.log('SK30code');
+				window.location.href = './skype85.html';
+			} else {
+				$( "span" ).text( "Código promocional inexistente" ).show().fadeOut( 2000 );
+			}
+			e.preventDefault();
+		});
+	</script>
+
+</body>
+</html>
