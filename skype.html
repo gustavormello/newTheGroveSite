@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="./ico/favicon.ico">
+
+    <title>THE GROVE - Curso de Inglês em Florianópolis</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      .errormsg {
+        color: red;
+        font-size: 20px;
+      }
+
+      button {
+        margin-top: 6px;
+      }
+
+      img {
+        margin: 20px 0 35px;
+        max-width: 85%;
+      }
+
+      h2 {
+        font-size: 60px;
+        margin: 10px 0 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Abrir navegação</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">THE GROVE</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="./index.html">Início</a></li>
+            <li><a href="metodo.html">Método</a></li>
+            <li id="prices"><a href="#">Preços</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Promoções <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="skype.html">Inglês Presencial</a></li>
+                <li class="active"><a href="skype.html">Inglês por Skype</a></li>
+                <li><a href="empresas.html">Empresas</a></li>
+                <li><a href="associacoes.html">Associações</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Autenticar-se <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="login.html?type=aluno">Aluno</a></li>
+                <li><a href="login.html?type=empresa">Empresa</a></li>
+                <li><a href="login.html?type=associacao">Associação</a></li>
+                <li><a href="login.html?type=afiliado">Afiliado</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+
+      <!-- Sales PAGE START -->
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+
+        <h2 class="text-center">Inglês por <b>Skype</b></h2>
+
+        <form action="#">
+          <div class="input-group input-group-lg">
+                  <span class="input-group-addon glyphicon glyphicon-gift"></span>
+            <input type="text" class="form-control" name="promocode" id="promocode" placeholder="Código promocional">
+          </div>
+            <p><button class="btn btn-primary btn-lg btn-block" type="submit">Enviar código e obter mais informações</button></p>
+            <p class="errormsg text-center"></p>
+            <div id="prices" class="text-center"><a href="#">Não possuo código promocional</a></div>
+        </form>
+
+        
+
+
+
+
+			</div> <!-- Col -->			
+		</div> <!-- Row -->
+		
+
+      <hr class="featurette-divider">
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Voltar ao início</a></p>
+        <p>&copy; 2014 The Grove Academia de Idiomas</p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/jquery.json-2.4.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+
+		<script>
+			$('form').on('submit', function(e) {
+				var code = $(this).find('#promocode').val();
+				if ((code) == 'SK10') {
+					window.location.href = './skype65.html';
+				} else if ((code) == 'SK20') {
+					window.location.href = './skype75.html';
+				} else if ((code) == 'SK30') {
+					window.location.href = './skype85.html';
+				} else {
+					$( "p.errormsg" ).html( "Código promocional inexistente.<br> Tente usar letras maiúsculas." ).show().fadeOut( 3000 );
+				}
+				e.preventDefault();
+			});
+
+      // Redirects user to the correct prices page according to location.
+
+      $( "div#prices" ).click(function() {
+        $.get("http://ipinfo.io", function (response) {
+
+          if (response.country = 'BR') {
+            window.location.href = './planos.html';
+          } else {
+              window.location.href = './prices.html';
+          }
+      }, "jsonp");
+      });
+
+		</script>
+
+  </body>
+</html>
+
+
+

@@ -1,4 +1,271 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
 body {
   min-height: 2000px;
   padding-top: 70px;
+  padding-bottom: 40px;
+/*  color: #333; */
+  color: #5a5a5a;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url('http://thegrove.com.br/metodo/images/d/de/Bgtexture.jpg');
+}
+
+h2 {
+	color: #333;
+    font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+/* STYLE FOR SIGN UP MAGNET
+-------------------------------------------------- */
+
+.signUp > div {
+  margin: 50px 0;
+}
+
+.signUp input {
+}
+
+.signUp button {
+  width: 100%;
+  background: green;
+  margin-top: 12px;
+}
+
+.signUp button:hover {
+	background: #2D9F44;
+}
+
+.signUp img {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.signUp h2 {
+  font-size: 2.7em;
+  color: #333;
+  margin-bottom: 60px;
+  font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 900;
+  font-style: bold;
+  width: 100%;
+}
+
+.signUp p:last-child {
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+#signUpText {
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  text-align: center;
+  border-top: 10px solid white;
+  border-right: 10px solid white;
+}
+
+/* Marketing Sliders
+------------------------- */
+
+.sliders h2 {
+  padding: 15px 5px;
+  margin-top: 0;
+  font-weight: normal;
+  background: #333;
+  color: #eee;
+}
+
+.sliders .col-lg-4 p {
+  color: #555;
+  margin: 25px 0 15px;
+  width: 100%;
+  padding: 20px;
+}
+
+.sliders .glyphicon {
+  color: #5CB85C;
+  font-weight: 200;
+  font-size: 12em;
+  padding: 35px 25px 15px;
+  width: 100%;
+}
+
+.wrapper-mkt {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 300px; 
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+#slide-mkt {
+    position: absolute;
+    bottom: -240px;
+    width: 100%;
+    height: 300px;
+    background: white;
+    transition: 1s;
+}
+
+.wrapper-mkt:hover #slide-mkt {
+    transition: 1s;
+    bottom: 0;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+/* PRICING TABLE
+----------------------------*/
+
+#btn-skype {
+	margin-bottom: 10px;
+}
+
+#btn-presencial {
+	margin-bottom: 10px;
+}
+
+.price {
+  font-size: 4em;
+}
+ 
+.price-cents {
+  vertical-align: super;
+  font-size: 50%;
+}
+ 
+.price-month {
+  font-size: 35%;
+  font-style: italic;
+}
+.panel {
+-webkit-transition-property : scale;
+-webkit-transition-duration : 0.2s;
+-webkit-transition-timing-function : ease-in-out;
+-moz-transition : all 0.2s ease-in-out;  
+}
+ 
+.panel:hover {
+box-shadow: 0 0 10px rgba(0,0,0,.5);
+-moz-box-shadow: 0 0 10px rgba(0,0,0,.5);
+-webkit-box-shadow: 0 0 10px rgba(0,0,0,.5);
+-webkit-transform: scale(1.05);
+-moz-transform: scale(1.05);
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Remove the edge padding needed for mobile */
+  .marketing {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left:  15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left:  0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+
+/* CONTACT INFO
+-------------------------------------------------- */
+
+.contactInfo {
+	margin-top: 62px;
+}
+
+.contactInfo > h4 {
+	margin-bottom: 25px;
+}
+
+.contactInfo p:first-child {
+	margin-bottom: 20px;
 }
