@@ -24,10 +24,6 @@ $message .='<b>Category :</b>'.$category."<br>";
 $message .='<b>Message :</b>'.$msg;
 
 
- 
-
-
-
 mail($toemail, $subject, $message, $headers);
  
  
