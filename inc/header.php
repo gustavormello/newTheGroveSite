@@ -1,3 +1,27 @@
+<?php 
+
+// Redirect users coming from specific sites to special pages
+
+// $referrer = $_SERVER['HTTP_REFERER'];
+// if (preg_match("/www.groupon.com.br/",$referrer)) {
+//     header('Location: http://www.thegrove.com.br/groupon.php');
+// // } elseif (preg_match("/site2.com/",$referrer)) {
+// //       header('Location: http://www.customercare.com/page-site2.html');
+// } else {
+//     header('Location: http://www.thegrove.com.br/');
+// };
+
+
+// Creates direct access to promo in case the visitor has already been there 
+
+ if( isset($_COOKIE['promo']) ) {
+        $promo = $_COOKIE['promo'];
+      } else {
+        $promo = 'skype.php';
+      } 
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,6 +35,7 @@
     <title>THE GROVE - Curso de Inglês em Florianópolis</title>
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<!--     <link href="css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/theme.css" rel="stylesheet">
 
@@ -22,50 +47,13 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    <body>
+      ga('create', 'UA-53152602-1', 'auto');
+      ga('send', 'pageview');
 
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Abrir navegação</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="./index.php">THE GROVE</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="./index.php">Início</a></li>
-            <li><a href="metodo.php">Método</a></li>
-            <li id="prices"><a href="#">Preços</a></li>
-            <li><a href="sobre.php">Sobre</a></li>
-            <li><a href="contato.php">Contato</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Promoções <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="skype.php">Inglês Presencial</a></li>
-                <li><a href="skype.php">Inglês por Skype</a></li>
-                <li><a href="empresas.php">Empresas</a></li>
-                <li><a href="associacoes.php">Associações</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Autenticar-se <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="http://thegrove.com.br/metodo/index.php?title=Special:UserLogin">Aluno</a></li>
-                <li><a href="login.php?type=empresa">Empresa</a></li>
-                <li><a href="login.php?type=associacao">Associação</a></li>
-                <li><a href="login.php?type=afiliado">Afiliado</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
+    </script>

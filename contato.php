@@ -4,9 +4,29 @@ require 'inc/header.php';
 ?>
 
     <style>
-      img {
-        width: 80%;
-        margin-left: 10%;
+      h2 {
+        font-size: 3em;
+        margin-bottom: 1.1em;
+        font-weight: 900;
+        margin-top: 30px;
+      }
+
+      .contact-info-box {
+        margin-top: 145px;
+      }
+
+      .stitched {
+        padding: 20px;
+        margin: 10px;
+        background: #26893A;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.3em;
+        border-radius: 10px;
+        box-shadow: 0 0 0 4px #26893A, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+        text-shadow: -1px -1px #2D9F44;
+        font-weight: normal;
       }
     </style>
 
@@ -92,9 +112,10 @@ require 'inc/menu.php';
     </form>
     </div>
 
-    <div class="col-md-4 contactInfo">
-      <img src="img/thegrovelogo.png" alt="THE GROVE - Academia de Idiomas">
-    </div>
+  <div class="col-md-4 contact-info-box">
+
+  </div>
+
 
   </div> <!-- row -->
 

@@ -23,7 +23,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Promoções <b class="caret"></b></a>
               <ul class="dropdown-menu">
 <!--                 <li><a href="skype.php">Inglês Presencial</a></li> -->
-                <li><a href="skype.php">Inglês por Skype</a></li>
+                <li><a href="<?php echo "$promo"; ?>">Inglês por Skype</a></li>
 <!--                 <li><a href="empresas.php">Empresas</a></li>
                 <li><a href="associacoes.php">Associações</a></li> -->
               </ul>

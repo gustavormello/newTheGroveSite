@@ -1,9 +1,52 @@
+// Change DIV position to fix the order of text and images when resizing the browser window.
+
+var idIndex = [
+    { leftBottom: "#lb1", rightTop: "#rt1" },
+    { leftBottom: "#lb2", rightTop: "#rt2" },
+    { leftBottom: "#lb3", rightTop: "#rt3" }
+];
+
+function changeOrder(windowWidth) {
+    for (var i = 0; i < idIndex.length; i++) {
+        var leftBottom = idIndex[i].leftBottom;
+        var rightTop = idIndex[i].rightTop;
+          if ( windowWidth < 975 ) {
+              $( rightTop ).insertBefore( leftBottom );
+              console.log('changing order 1...');
+              console.log(windowWidth);
+
+          } else if ( windowWidth > 974 ) {
+              $( leftBottom ).insertBefore( rightTop );
+              console.log('changing order 2...');
+              console.log(windowWidth);
+          } else {}
+    }
+};
+
+var originalWidth = $(window).width();
+
+window.onresize = function(event) {
+    var windowWidth = $(window).width(); 
+    if ( originalWidth > 974 && windowWidth > originalWidth ) {
+    } else {
+        changeOrder(windowWidth);
+    }
+};
+
+// Off-canvas
+
+$(document).ready(function () {
+  $('[data-toggle=offcanvas]').click(function () {
+    $('.row-offcanvas').toggleClass('active')
+  });
+});
+
 // Redirects user to the correct prices page according to location.
 
     $( "li#prices" ).click(function() {
       $.get("http://ipinfo.io", function (response) {
 
-        if (response.country = 'BR') {
+        if (response.country == 'BR') {
           window.location.href = './planos.php';
         } else {
             window.location.href = './prices.php';
@@ -14,7 +57,7 @@
     $( "div#prices" ).click(function() {
       $.get("http://ipinfo.io", function (response) {
 
-        if (response.country = 'BR') {
+        if (response.country == 'BR') {
           window.location.href = './planos.php';
         } else {
             window.location.href = './prices.php';
@@ -81,7 +124,7 @@ success: function(label) {
 
 
 // --------------------------------------------------------
-//                       MAILCHIP JS 
+//                       MAILCHIMP JS 
 // --------------------------------------------------------
 
 var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';

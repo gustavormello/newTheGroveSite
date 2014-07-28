@@ -7,6 +7,10 @@ require 'inc/header.php';
         margin: 20px;
         font-size: 50px;
       }
+
+      .row {
+        margin-bottom: 40px;
+      }
     </style>
   </head>
   <body>
@@ -21,82 +25,106 @@ require 'inc/menu.php';
         <hr>
 
         <div class="col-lg-3 col-sm-6">
-          <div class="panel panel-primary text-center">
+          <div class="panel panel-default text-center">
             <div class="panel-heading panel-success">
               <h3>Básico</h3>
             </div>
             <div class="panel-body">
-              <h3 class="panel-title price">$265<span class="price-cents">00</span><span class="price-month">mês</span></h3>
+              <h3 class="panel-title price">$150<span class="price-cents">00</span><span class="price-month">mês</span></h3>
             </div>
             <ul class="list-group">
-              <li class="list-group-item">Contrato anual</li>
-              <li class="list-group-item">1 dia por semana</li>
-              <li class="list-group-item">11 meses de aula</li>
+              <li class="list-group-item">Atendimento VIP</li>
+              <li class="list-group-item">1 dia por semana<br>+ sábado</li>
+              <li class="list-group-item">Sem limite de<br>tempo em sala</li>
               <li class="list-group-item">Material didático<br> gratuito</li>
-              <li class="list-group-item">Aulas presenciais<br>ou por Skype</li>
+              <li class="list-group-item">Aulas individualizadas<br> por Skype</li>
               <li class="list-group-item">Sem taxa<br> de rescisão</li>
-              <li class="list-group-item"><strong>R$ 60,00</strong><br> taxa de matrícula</li>
-              <li class="list-group-item"><a class="btn btn-default">Matricular-se!</a></li>
+              <li class="list-group-item">Sem taxa<br> de matrícula</li>
+              <li class="list-group-item">Cancele a qualquer<br> momento</li>
+              <li class="list-group-item"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="ZD4AJL3WZJAHE">
+                <input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - A maneira fácil e segura de enviar pagamentos online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">
+                </form></li>
             </ul>
           </div>          
         </div>
         <div class="col-lg-3 col-sm-6">
-          <div class="panel panel-default text-center">
+          <div class="panel panel-primary text-center">
             <div class="panel-heading">
               <h3>Tradicional</h3>
             </div>
             <div class="panel-body">
-              <h3 class="panel-title price">$315<span class="price-cents">00</span><span class="price-month">mês</span></h3>
+              <h3 class="panel-title price">$200<span class="price-cents">00</span><span class="price-month">mês</span></h3>
             </div>
             <ul class="list-group">
-              <li class="list-group-item">Contrato anual</li>
-              <li class="list-group-item">2 dias por semana</li>
-              <li class="list-group-item">11 meses de aula</li>
+              <li class="list-group-item">Atendimento VIP</li>
+              <li class="list-group-item">2 dias por semana<br>+ sábado</li>
+              <li class="list-group-item">Sem limite de<br>tempo em sala</li>
               <li class="list-group-item">Material didático<br> gratuito</li>
-              <li class="list-group-item">Aulas presenciais<br>ou por Skype</li>
+              <li class="list-group-item">Aulas individualizadas<br> por Skype</li>
               <li class="list-group-item">Sem taxa<br> de rescisão</li>
               <li class="list-group-item">Sem taxa<br> de matrícula</li>
-              <li class="list-group-item"><a class="btn btn-default">Matricular-se!</a></li>
-            </ul>
-          </div>          
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <div class="panel panel-danger text-center">
-            <div class="panel-heading">
-              <h3>Intensivo</h3>
-            </div>
-            <div class="panel-body">
-              <h3 class="panel-title price">$365<span class="price-cents">00</span><span class="price-month">mês</span></h3>
-            </div>
-            <ul class="list-group">
-              <li class="list-group-item">Contrato anual</li>
-              <li class="list-group-item">3 dias por semana</li>
-              <li class="list-group-item">11 meses de aula</li>
-              <li class="list-group-item">Material didático<br> gratuito</li>
-              <li class="list-group-item">Aulas presenciais<br>ou por Skype</li>
-              <li class="list-group-item">Sem taxa<br> de rescisão</li>
-              <li class="list-group-item">Sem taxa<br> de matrícula</li>
-              <li class="list-group-item"><a class="btn btn-danger ">Matricular-se!</a></li>
+              <li class="list-group-item">Cancele a qualquer<br> momento</li>
+              <li class="list-group-item"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="94XY8MBRE62YA">
+                <input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - A maneira fácil e segura de enviar pagamentos online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">
+                </form></li>
             </ul>
           </div>          
         </div>
         <div class="col-lg-3 col-sm-6">
           <div class="panel panel-default text-center">
             <div class="panel-heading">
+              <h3>Intensivo</h3>
+            </div>
+            <div class="panel-body">
+              <h3 class="panel-title price">$250<span class="price-cents">00</span><span class="price-month">mês</span></h3>
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item">Atendimento VIP</li>
+              <li class="list-group-item">3 dias por semana<br>+ sábado</li>
+              <li class="list-group-item">Sem limite de<br>tempo em sala</li>
+              <li class="list-group-item">Material didático<br> gratuito</li>
+              <li class="list-group-item">Aulas individualizadas<br> por Skype</li>
+              <li class="list-group-item">Sem taxa<br> de rescisão</li>
+              <li class="list-group-item">Sem taxa<br> de matrícula</li>
+              <li class="list-group-item">Cancele a qualquer<br> momento</li>
+              <li class="list-group-item"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="UH4ZHYPW7SZSL">
+                <input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - A maneira fácil e segura de enviar pagamentos online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">
+                </form></li>
+            </ul>
+          </div>          
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="panel panel-warning text-center">
+            <div class="panel-heading">
               <h3>Super-Intensivo</h3>
             </div>
             <div class="panel-body">
-              <h3 class="panel-title price">$465<span class="price-cents">00</span><span class="price-month">mês</span></h3>
+              <h3 class="panel-title price">$350<span class="price-cents">00</span><span class="price-month">mês</span></h3>
             </div>
             <ul class="list-group">
-              <li class="list-group-item">Contrato anual</li>
-              <li class="list-group-item">5 dias por semana</li>
-              <li class="list-group-item">11 meses de aula</li>
+              <li class="list-group-item">Atendimento VIP</li>
+              <li class="list-group-item">5 dias por semana<br>+ sábado</li>
+              <li class="list-group-item">Sem limite de<br>tempo em sala</li>
               <li class="list-group-item">Material didático<br> gratuito</li>
-              <li class="list-group-item">Aulas presenciais<br>ou por Skype</li>
+              <li class="list-group-item">Aulas individualizadas<br> por Skype</li>
               <li class="list-group-item">Sem taxa<br> de rescisão</li>
               <li class="list-group-item">Sem taxa<br> de matrícula</li>
-              <li class="list-group-item"><a class="btn btn-default">Matricular-se!</a></li>
+              <li class="list-group-item">Cancele a qualquer<br> momento</li>
+              <li class="list-group-item"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="YXUVM29FJXHT8">
+                <input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - A maneira fácil e segura de enviar pagamentos online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">
+                </form></li>
             </ul>
           </div>          
         </div>
@@ -105,27 +133,8 @@ require 'inc/menu.php';
     </div> <!-- row -->
 
 
-      <hr class="featurette-divider">
+<?php require 'inc/modal-contact.php'; ?>
 
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Voltar ao início</a></p>
-        <p>&copy; 2014 The Grove Academia de Idiomas</p>
-      </footer>
+    <!-- Closing DIV of .container in footer.php -->
 
-    </div><!-- /.container -->
-
-
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/functions.js"></script>
-    <script src="js/jquery.json-2.4.min.js"></script>
-    <script src="js/bootstrap-select.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-  </body>
-</html>
+<?php require 'inc/footer.php'; ?>

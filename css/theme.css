@@ -4,8 +4,7 @@
 
 body {
   padding-top: 70px;
-  padding-bottom: 40px;
-/*  color: #333; */
+  padding-bottom: 20px;
   color: #5a5a5a;
   font-family: 'Open Sans', sans-serif;
   background-image: url('http://thegrove.com.br/metodo/images/d/de/Bgtexture.jpg');
@@ -13,38 +12,57 @@ body {
 
 h2 {
 	color: #333;
-    font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif; 
 }
 
-/* STYLE FOR SIGN UP MAGNET
+.main-headers {
+  font-size: 3em;
+  margin-bottom: 1em;
+  font-weight: 900;
+}
+
+/* CSS FOR - planos.php
 -------------------------------------------------- */
 
-.signUp > div {
-  margin: 50px 0;
+h2 {
+  font-size: 3em;
+  margin-bottom: 1.1em;
+  font-weight: 900;
+  margin-top: 30px;
 }
 
-.signUp input {
+.quick-access a {
+  text-decoration: none;
 }
+
+.anchor-links {
+  display: block;
+  height: 60px; /*same height as header*/
+  margin-top: -60px; /*same height as header*/
+  visibility: hidden;
+}
+
+.planos {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* SIGN UP MAGNET - index.php
+-------------------------------------------------- */
 
 .signUp .button {
   width: 100%;
-  background: green;
   margin-top: 12px;
 }
 
-.signUp .button:hover {
-	background: #2D9F44;
-}
-
 .signUp img {
-  margin-top: 20px;
-  padding-left: 20px;
+  margin: 20px 0 10px;
 }
 
 .signUp h2 {
-  font-size: 2.7em;
-  color: #333;
-  margin-bottom: 60px;
+  font-size: 45px;
+  margin-bottom: 20px;
+  margin-top: 0;
   font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 900;
   font-style: bold;
@@ -52,14 +70,141 @@ h2 {
 }
 
 .signUp p:last-child {
-  font-size: 10px;
+  font-size: 13px;
   margin-top: 10px;
 }
 
 #signUpText {
-  font-size: 16px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
+  font-size: 20px;
 }
+
+/* VIDEO EXAMPLE - index.php
+-------------------------------------------------- */
+
+  .arrow_box { 
+    position: relative; 
+    background: #26893A; 
+    border: 4px solid #35bf51;  
+    padding: 30px 15px;
+    color: #DDF8C6;
+    font-weight: 900;
+    margin-bottom: 40px;
+    font-size: 45px;
+  }
+ 
+  .arrow_box:after, .arrow_box:before { top: 100%; left: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; } 
+  .arrow_box:after { border-color: rgba(38, 137, 58, 0); border-top-color: #26893A; border-width: 30px; margin-left: -30px; } 
+  .arrow_box:before { border-color: rgba(53, 191, 81, 0); border-top-color: #35bf51; border-width: 36px; margin-left: -36px; }
+
+  #assista {   
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+    margin-bottom: 10px !important; 
+    margin-top: 20px;
+  }
+
+  .demo-video {
+    max-width: 853px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 0 15px 30px;
+  }
+
+  .wide-bg {
+    margin-top: 3em;
+/*  background-color: #B8ECD0;
+    background-image: url('http://thegrove.com.br/blog/wp-content/uploads/2013/07/02.png');
+    border-top: 5px solid #52B27F;
+    border-bottom: 5px solid #52B27F;*/
+  }
+
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+  }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+/* BENEFITS - index.php
+-------------------------------------------------- */
+  #como-funciona {    
+    margin-top: 35px;
+    font-size: 4em;
+  }
+
+  .featurette img {
+    margin: auto; 
+  }
+
+  #benefits-1 h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+
+  #benefits-2 div:last-child {
+    padding-left: 60px;
+  }
+
+  #benefits-2 h2 {
+    margin-top: 35px;
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+
+  #benefits-3 h2 {
+    margin-top: 75px;
+    font-size: 2.5em;
+    font-weight: 700;   
+  }
+
+  #benefits-4 h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-top: 95px;
+  }
+
+  .marketing {
+    margin-bottom: 150px;
+  }
+
+  .marketing h2:nth-child(1+n) {
+    color: red;
+  }
+
+/* TESTIMONIALS - index.php
+-------------------------------------------------- */
+
+  .testy {
+    background: #333; /*#fb5235;*/
+    background-image: url('http://thegrove.com.br/blog/wp-content/uploads/2013/07/02.png');
+    padding: 30px 0;
+    margin: 65px 0 20px;
+    color: white;
+  }
+
+  .testy h2 {
+    font-size: 3em;
+    color: white;
+    margin-bottom: 1.5em;
+    font-weight: 900;
+  }
+
+  .author img {
+    margin-bottom: 10px;
+  }
+
+  .author p {
+    margin-bottom: 20px;
+  }
 
 
 /* CUSTOMIZE THE NAVBAR
@@ -100,62 +245,11 @@ h2 {
   border-right: 10px solid white;
 }
 
-/* Marketing Sliders
-------------------------- */
-
-.sliders h2 {
-  padding: 15px 5px;
-  margin-top: 0;
-  font-weight: normal;
-  background: #333;
-  color: #eee;
-}
-
-.sliders .col-lg-4 p {
-  color: #555;
-  margin: 25px 0 15px;
-  width: 100%;
-  padding: 20px;
-}
-
-.sliders .glyphicon {
-  color: #5CB85C;
-  font-weight: 200;
-  font-size: 12em;
-  padding: 35px 25px 15px;
-  width: 100%;
-}
-
-.wrapper-mkt {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 300px; 
-    border: 1px solid black;
-    border-radius: 10px;
-    padding-bottom: 10px;
-}
-
-#slide-mkt {
-    position: absolute;
-    bottom: -240px;
-    width: 100%;
-    height: 300px;
-    background: white;
-    transition: 1s;
-}
-
-.wrapper-mkt:hover #slide-mkt {
-    transition: 1s;
-    bottom: 0;
-}
-
-
 /* Featurettes
 ------------------------- */
 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 35px 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
@@ -213,6 +307,10 @@ box-shadow: 0 0 10px rgba(0,0,0,.5);
 }
 
 
+#footer-address {
+  font-size: 12px;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -252,6 +350,7 @@ box-shadow: 0 0 10px rgba(0,0,0,.5);
   .featurette-heading {
     font-size: 50px;
   }
+
 }
 
 @media (min-width: 992px) {
@@ -259,20 +358,127 @@ box-shadow: 0 0 10px rgba(0,0,0,.5);
     margin-top: 40px;
     margin-bottom: 20px;
   }
+
+/* STYLE FOR SIGN UP MAGNET
+-------------------------------------------------- */
+
+#receba {
+  margin-top: 45px;
 }
+
+.signUp > div {
+  margin: 20px 0;
+}
+
+.signUp .button {
+  margin-top: 12px;
+}
+
+.signUp img {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.signUp h2 {
+  margin-bottom: 60px;
+}
+
+.signUp p:last-child {
+  margin-top: 10px;
+}
+
+#signUpText {
+  margin-bottom: 60px;
+  font-size: 22px;
+}
+
+/* VIDEO EXAMPLE - index.php
+-------------------------------------------------- */
+
+  .main-headers {
+    font-size: 3em;
+    margin-bottom: 1em;
+    font-weight: 900;
+  }
+
+  #assista {
+    margin-top: 2em;
+/*    color: white;*/
+  }
+
+  .wide-bg {
+    margin-top: 6em;
+  }
+
+
+/* BENEFITS - index.php
+-------------------------------------------------- */
+  #como-funciona {    
+    background: #333;
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 4em;
+    padding: 15px;
+  }
+
+  .featurette img {
+    margin: auto; 
+  }
+
+  #benefits-1 h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+
+  #benefits-2 div:last-child {
+    padding-left: 60px;
+  }
+
+  #benefits-2 h2 {
+    margin-top: 35px;
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+
+  #benefits-3 h2 {
+    margin-top: 75px;
+    font-size: 2.5em;
+    font-weight: 700;   
+  }
+
+  #benefits-4 h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-top: 95px;
+  }
+
+  .marketing {
+    margin-bottom: 150px;
+  }
+
+/* TESTIMONIALS - index.php
+-------------------------------------------------- */
+
 
 
 /* CONTACT INFO
 -------------------------------------------------- */
 
 .contactInfo {
-	margin-top: 62px;
+  margin-top: 62px;
 }
 
 .contactInfo > h4 {
-	margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .contactInfo p:first-child {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
+
+}
+
+
+
+

@@ -2,6 +2,23 @@
 $title="THE GROVE - Curso de Inglês em Florianópolis";
 require 'inc/header.php';
 ?>
+
+<style>
+  h2 {
+    font-size: 3em;
+    margin-bottom: 1.1em;
+    font-weight: 900;
+    margin-top: 30px;
+  }
+
+  p {
+    padding-right: 35px;
+  }
+
+  footer {
+    margin-top: 100px;
+  }
+</style>
   </head>
   <body>
 <?php
@@ -19,17 +36,16 @@ require 'inc/menu.php';
      <div class="row">
         <div class="col-md-6">
 
-          <h1>Sobre</h1>
           <h2>Origem do Nome</h2>
-          <p>
+          <p class="text-justify">
             The Grove em inglês significa bosque, floresta. É uma palavra que descreve uma área com árvores mais altas e pouca vegetação baixa. Na Grécia antiga, na cidade de Atenas, havia um parque com um grove de oliveiras. Ele era chamado de Academia. Lá, vários eventos religiosos e de outras naturezas eram sediados. Foi neste local que por muito tempo estudiosos de várias áreas se encontravam para falar sobre matemática, filosofia, poesia e outros assuntos. É desta rica história que a nossa escola recebe o seu nome.
           </p>
 
-          <p>
+          <p class="text-justify">
             The Grove simboliza o nosso apreço pela tradição de ensino ocidental. Diferente de outras escolas que escolhem um método único com algo que soe moderno, o método The Grove aceita todos os métodos já utilizados na história. Poderíamos dizer que temos um método multimétodo. Fica a critério do professor e do aluno se desejam focar as aulas mais em gramática ou conversação, ou se, por outro lado, querem aulas que cubram todas as habilidades. Esta flexibilidade reflete o significado da segunda parte do nome da nossa escola, Academia de Idiomas.
           </p>
 
-          </p>
+          <p class="text-justify">
             Academia aqui toma um segundo sentido, o moderno, de uma academia onde as pessoas se exercitam. A nossa escola segue a filosofia de uma academia e emula as suas características positivas. Assim como em uma academia, os nossos alunos têm atendimento individualizado e personalizado, têm a liberdade de fazerem aulas em diversos horários a ainda podem receber do professor um programa de exercícios que foi criado especificamente para atingir suas metas pessoais.
           </p>
       </div>
@@ -76,7 +92,6 @@ require 'inc/menu.php';
       </div>
       </div> <!-- End of Row -->
 
-      <hr class="featurette-divider">
 
 <?php require 'inc/footer.php'; ?>
 
